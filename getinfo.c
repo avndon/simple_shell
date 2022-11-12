@@ -65,7 +65,7 @@ void free_info(info_t *info, int all)
 	info->argv = NULL;
 	info->path = NULL;
 
-if (all)
+	if (all)
 	{
 		if (!info->cmd_buf)
 			free(info->arg);
