@@ -1,1 +1,1 @@
-Simple Shell project between Eze Douglas and Ewomazino Gift
+Simple Shell project between Eze Douglas and Mark Gift
