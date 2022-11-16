@@ -1,4 +1,4 @@
-#include <sehll.h>
+#include <shell.h>
 
 /**
  * main - entry point
