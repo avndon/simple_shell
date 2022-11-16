@@ -90,6 +90,7 @@ typedef struct passinfo
 	char **environ;
 	int env_changed;
 	int status;
+
 	char **cmd_buf; /* pointer to cmd ; chain buffer, for memory mangement */
 	int cmd_buf_type; /* CMD_type ||, &&, ; */
 	int readfd;
@@ -97,7 +98,6 @@ typedef struct passinfo
 } info_t;
 
 #define INFO_INIT \
-
 {NULL, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL, NULL, 0, 0, NULL, \
 	0, 0, 0}
 
@@ -185,7 +185,6 @@ int _myhelp(info_t *);
 /* toem_builtin1.c */
 int _myhistory(info_t *);
 int _myalias(info_t *);
-
 
 /*toem_getline.c */
 ssize_t get_input(info_t *);
