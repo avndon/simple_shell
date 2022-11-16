@@ -12,7 +12,6 @@
 int _myhistory(info_t *info)
 {
 	print_list(info->history);
-
 	return (0);
 }
 
@@ -31,7 +30,6 @@ int unset_alias(info_t *info, char *str)
 	int ret;
 
 	p = _strchr(str, '=');
-
 	if (!p)
 		return (1);
 	c = *p;
@@ -56,7 +54,6 @@ int set_alias(info_t *info, char *str)
 	char *p;
 
 	p = _strchr(str, '=');
-
 	if (!p)
 		return (1);
 	if (!*++p)
@@ -118,7 +115,6 @@ int _myalias(info_t *info)
 	for (i = 1; info->argv[i]; i++)
 	{
 		p = _strchr(info->argv[i], '=');
-
 		if (p)
 			set_alias(info, info->argv[i]);
 		else
